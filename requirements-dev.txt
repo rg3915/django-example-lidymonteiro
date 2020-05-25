@@ -14,4 +14,6 @@ packaging==20.3
 more-itertools==8.2.0
 pyparsing==2.4.7
 
+ipython[notebook]
+
 -r requirements.txt
