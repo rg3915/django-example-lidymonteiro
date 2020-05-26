@@ -2,6 +2,24 @@
 
 ![alt text](https://github.com/lucasmagnum/django-github-actions-ci/workflows/Python%20application/badge.svg)
 
+## Como rodar o projeto sem Docker na sua máquina
+
+```
+git clone https://github.com/rg3915/django-example-lidymonteiro.git
+cd django-example-lidymonteiro
+python -m venv .venv
+source .venv/bin/activate
+
+# Com PostgreSQL instalado
+createdb -U postgres mydb
+createuser -U postgres -PE myuser  # senha 1234
+
+pip install -r requirements-dev.txt
+
+# rodando o notebook
+python manage.py shell_plus --notebook
+```
+
 #### Executando o projeto em modo desenvolvimento:
 
 - Baixe o projeto: 
